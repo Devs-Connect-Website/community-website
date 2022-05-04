@@ -11,11 +11,10 @@
 body{
 	font-family: 'open_sansregular';
 	font-weight: bolder;
-	font-size: 2em;
-	
+	font-size: 1.75em;
 	color: white;
 	
-	text-shadow: -2px -2px 0 black, 2px 2px 0 black, 2px -2px 0 black, -2px 2px 0 black
+	text-shadow: -2px -2px 0 black, 2px 2px 0 black, 2px 0px 0 black, -2px 0px 0 black, 2px -2px 0 black, -2px 2px 0 black
 }
 .center {
 	text-align: center;
@@ -28,6 +27,17 @@ body{
 }
 ul {
   list-style-type: none;
+  line-height: 150%;
+}
+a {
+	color: white;
+	text-decoration: none;
+}
+li:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+li:active {
+  transform: scale(0.9); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 </style>
 </head>
@@ -35,9 +45,11 @@ ul {
 <h1 class="center"><img class="image" src="logo.svg"/></h1>
 <p class="center">
 <ul class="center">
-  <li>Coffee</li>
-  <li>Tea</li>
-  <li>Milk</li>
+  <li><a href="#">About us</a></li>
+  <li><a href="https://www.meetup.com/devsconnect">Events</a></li>
+  <li><a href="https://www.youtube.com/channel/UCSsGzW6_uMGJI5h7SxJ6yow">Videos</a></li>
+  <li><a href="https://github.com/Devs-Connect">Slides and source code</a></li>
+  <li><a href="https://docs.google.com/document/d/1eMZlACr8DPXjhMFNV07wCt_FYI009FkoSXP2C1SKrMA">Join our Slack workspace</a></li>
 </ul>
 </p>
 </body>
